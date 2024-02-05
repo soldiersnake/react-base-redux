@@ -29,7 +29,7 @@ export default function contadorReducer(state = initialState, action) {
         case DECREMENTAR_5: {
             return{
                 ...state,
-                contador: state.contador - contador.payload,
+                contador: state.contador - action.payload,
             }
         }
         case RESET: {
